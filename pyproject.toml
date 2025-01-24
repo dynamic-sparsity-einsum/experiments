@@ -1,0 +1,25 @@
+[project]
+name = "experiments"
+version = "0.1.0"
+description = "Experiments for Exploiting Dynamic Sparsity in Einsum"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "einsum-benchmark>=0.1.7",
+    "opt-einsum>=3.4.0",
+    "sesum>=0.3.8",
+    "torch>=2.5.1",
+]
+
+
+[project.optional-dependencies]
+force = ["sesum"]
+
+[tool.uv.sources]
+sesum = { path = "sesum-0.3.8-py3-none-any.whl" }
+torch = [{ index = "pytorch-cpu", marker = "platform_system != 'Darwin'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
