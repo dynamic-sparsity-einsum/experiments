@@ -23,7 +23,7 @@ The results will be written to a sqlite databsae, `synth_results.db`. The file w
 
 ### Real Data (Einsum Benchmark)
 
-All scripts in this section will write the results into a sqlite database, `benchmark_results.db`. The file with our results is already included in the `results/` folder. For ease of use we provide the results in a csv file as well. Note that the experimental scripts only run each instance once. In our experiments we ran them several times, but in the CSV file we only report the median runtimes.
+All scripts in this section will write the results into a sqlite database, `benchmark_results.db`. For ease of use we provide the results in a csv file, since the database is too large for git. Note that the experimental scripts only run each instance once. In our experiments we ran them several times, but in the CSV file we only report the median runtimes.
 
 #### Density Evolution
 
